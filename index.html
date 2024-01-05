@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kevroy Taylor's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="profile.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+    <p class="w3-text-grey">by Kevroy Taylor</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <a href="https://www.facebook.com/profile.php?id=100011892077101&sk=about"><i class="fa fa-facebook-official w3-hover-opacity"> </i></a>
+    <a href="https://www.instagram.com/kevroytaylor4379/"><i class="fa fa-instagram w3-hover-opacity"> </i></a>
+    <i class="fa fa-snapchat w3-hover-opacity"> </i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"> </i>
+    <i class="fa fa-twitter w3-hover-opacity"> </i>
+    <i class="fa fa-linkedin w3-hover-opacity"> </i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="BlogEntry.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Library</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Moonlitwhispers.png" alt="Norway" onclick="displayCard('card1')" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Moonlit Whispers</b></p>
+        <p>Under Willow Creek's radiant moon, Elara's heart whispers secrets. On the old bridge, a chance meeting with Orion, a dreamer, unfolds a tender story of whispered love and shared dreams.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Thelastdance.png" alt="Norway" onclick="displayCard('card2')" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>The Last Dance in Paris</b></p>
+        <p>As the golden hues of sunset draped over the City of Lights, Madeleine and Jacques found themselves entwined in a final, unforgettable dance on the banks of the Seine, a moment where time seemed to stand still.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="HeartsAligned.png" alt="Norway" onclick="displayCard('card3')" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Hearts Aligned</b></p>
+        <p>In the unexpected serendipity of a crowded coffee shop, Emma's eyes met Liam's, and in that fleeting glance, their hearts aligned, setting off a symphony of emotions that neither had anticipated.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="EchoesofAsummerlove.png" alt="Norway" onclick="displayCard('card4')" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Echoes of a Summer Love</b></p>
+        <p>That summer in the sleepy coastal town of Brighton, Ellie discovered more than just the sun-kissed beaches; she found a love that echoed through the tides of time, a love that started with a simple hello under the boardwalk.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Serenadeintherain.png" alt="Norway" onclick="displayCard('card5')" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Serenade in the Rain</b></p>
+        <p>On a rain-soaked evening in downtown Portland, the melodies of a street musician's violin serenaded Clara through the downpour, leading her into the arms of Noah, an encounter orchestrated by the rhythm of the falling rain.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="Starlitsky.png" alt="Norway" onclick="displayCard('card6')" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Beneath the Starlit Sky</b></p>
+        <p>Under the vast, starlit sky of the Arizona desert, Alex and Jordan's paths crossed in a destiny-filled night, where the stars above bore witness to a love as endless as the universe itself.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">&laquo;</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">&raquo;</a>
+    </div>
+  </div>
+
+  <img id="dynamicImage" src="Moonlitwhispers.png" alt="Nature" style="width:100%">
+  <div class="w3-container">
+    <h3 id="dynamicTitle"><b>Moonlit Whispers</b></h3>
+    <h5 id="dynamicSubtitle">Romance</h5>
+  </div>
+
+  <div id="dynamicParagraphs" class="w3-container">
+    <p>In the quaint town of Willow Creek, where the moon shone brighter than anywhere else, lived Elara, a young woman whose heart held secrets as deep as the night sky. Each night, beneath the silvery glow of the moon, she'd walk to the old bridge spanning the gentle Willow River, a place where her thoughts felt as free as the whispering winds.</p>
+
+    <p>One moonlit night, as Elara leaned against the cool railing, lost in her reverie, she heard a soft, melodic voice. Turning, she saw a young man, his eyes reflecting the starry night, standing a few steps away. He introduced himself as Orion, a painter who found his muse in the night's beauty.</p>
+
+    <p>Night after night, they met under the same moon, their conversations flowing like the river below. Orion shared his dreams of capturing the moon's essence on his canvas, while Elara spoke of her longing for a life beyond the sleepy town. Their words, soft and cautious, began to weave a tapestry of shared dreams and quiet yearnings.</p>
+
+    <p>One evening, Orion revealed a canvas to Elara. It was a painting of the bridge, bathed in moonlight, with two figures standing close, almost touching. The image was so vivid, so real, that Elara felt tears prick her eyes. "It's us," she whispered.</p>
+
+    <p>Orion's voice was hesitant yet hopeful as he spoke, "Elara, in you, I've found my moonlit muse. In these whispers, I've found a love that speaks louder than any words."</p>
+
+    <p>Under the glow of the full moon, their lips met for the first time, sealing a promise made in the quiet of moonlit whispers. Their love, much like the moon above, became a beacon in the night, guiding them into a future where dreams and reality merged, as beautiful and endless as the starry sky.</p>
+  </div>
+
+  <div class="w3-third">
+    <h3>POPULAR TAGS</h3>
+    <p>
+      <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+    </p>
+  </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="profile.png" alt="Me" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <img src="Mypic.jpg" alt="Me" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <hr>
+    
+    <h4>Technical Skills</h4>
+    <!-- Progress bars / Skills -->
+    <p>Electrical Technology</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>Information Technology</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+    </div>
+    <p>Principles of Business</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:100%">100%</div>
+    </div>
+    <p>
+      <a href="Resume.pdf" download="Resume">
+        <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+          <i class="fa fa-download w3-margin-right"></i>Download Resume
+        </button>
+      </a>
+    </p>
+    
+    <hr>
+    
+    <h4>How much I charge</h4>
+    <!-- Pricing Tables -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">1GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-teal w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">Unlimited Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Kevroytaylor65@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Spanish Town, ja</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>8763108493</p>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="Starlitsky.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="Moonlitwhispers.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+  
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+//NEW
+var cardData = [
+  {
+    id: 'card1',
+    imageSrc: 'Moonlitwhispers.png',
+    altText: 'Romance',
+    title: '<b>Moonlit Whispers</b>',
+    subtitle: 'Romance',
+    paragraphs: [
+      'In the quaint town of Willow Creek, where the moon shone brighter than anywhere else, lived Elara, a young woman whose heart held secrets as deep as the night sky. Each night, beneath the silvery glow of the moon, she\'d walk to the old bridge spanning the gentle Willow River, a place where her thoughts felt as free as the whispering winds.',
+      'One moonlit night, as Elara leaned against the cool railing, lost in her reverie, she heard a soft, melodic voice. Turning, she saw a young man, his eyes reflecting the starry night, standing a few steps away. He introduced himself as Orion, a painter who found his muse in the night\'s beauty.',
+      'Night after night, they met under the same moon, their conversations flowing like the river below. Orion shared his dreams of capturing the moon\'s essence on his canvas, while Elara spoke of her longing for a life beyond the sleepy town. Their words, soft and cautious, began to weave a tapestry of shared dreams and quiet yearnings.',
+      'One evening, Orion revealed a canvas to Elara. It was a painting of the bridge, bathed in moonlight, with two figures standing close, almost touching. The image was so vivid, so real, that Elara felt tears prick her eyes. "It\'s us," she whispered.',
+      'Orion\'s voice was hesitant yet hopeful as he spoke, "Elara, in you, I\'ve found my moonlit muse. In these whispers, I\'ve found a love that speaks louder than any words."',
+      'Under the glow of the full moon, their lips met for the first time, sealing a promise made in the quiet of moonlit whispers. Their love, much like the moon above, became a beacon in the night, guiding them into a future where dreams and reality merged, as beautiful and endless as the starry sky.'
+    ]
+
+  },
+
+  {
+    id: 'card2',
+    imageSrc: 'Thelastdance.png',
+    altText: 'Romance',
+    title: '<b>The Last Dance in Paris</b>',
+    subtitle: 'Romance',
+    paragraphs: [
+      'As the golden hues of sunset draped over the City of Lights, Madeleine and Jacques found themselves entwined in a final, unforgettable dance on the banks of the Seine, a moment where time seemed to stand still.',
+      'The air was brisk, the sky painted with strokes of orange and pink, reflecting in the gently flowing river. Paris, with its timeless charm, was the witness to their love story, one that had blossomed like spring flowers in the Jardin des Tuileries and was now, like autumn leaves, drifting into a beautiful yet poignant phase.',
+      'Jacques, a talented violinist who played at a quaint café in Montmartre, had met Madeleine, an aspiring artist, two years ago on a rainy Parisian evening. Their love was like a melody, sometimes a soft sonnet, at others a passionate symphony. They spent days exploring the cobbled streets of Paris, nights under the shimmering lights of the Eiffel Tower, and evenings filled with music and art, their souls intertwined in a harmonious duet.',
+      'But fate had a different plan. Jacques had received an invitation to join a renowned orchestra in New York, a dream opportunity for any musician. As much as it pained them, they knew their paths were diverging. This dance by the Seine was their farewell, a final commemoration of their love.',
+      'As they danced, their movements were a language of their own, telling stories of the days spent in laughter and nights wrapped in each other\'s embrace. The city lights flickered like distant stars, echoing their bitter-sweet symphony. The melody of Jacques\' violin filled the air, intertwining with the rhythm of Madeleine\'s heartbeats.',
+      'Around them, the world continued its pace, but for Madeleine and Jacques, in this moment, nothing else existed but the warmth of their hands clasped together, the softness of their steps on the grass, and the tender glances they exchanged.',
+      'As the song neared its end, they drew closer, their eyes reflecting a kaleidoscope of memories and dreams unfulfilled. The final note lingered in the air, as Jacques whispered, "No matter where life takes us, our dance will never end."',
+      'With a gentle kiss and tears glistening in their eyes, they parted under the Parisian sky, leaving a piece of their heart by the Seine. The night embraced them in its quiet solace, and the river, a silent spectator, flowed on, carrying their love story in its eternal currents.',
+      '"The Last Dance in Paris" was not just an end but a promise of love transcending time and distance, a dance that would continue in their hearts forever.'
+    ]
+
+  },
+
+  {
+    id: 'card3',
+    imageSrc: 'HeartsAligned.png',
+    altText: 'Romance',
+    title: '<b>Hearts Aligned</b>',
+    subtitle: 'Romance',
+    paragraphs: [
+      'In the heart of the bustling city, there was a quaint coffee shop that seemed to exist outside of time. It was in this haven of warmth and aromatic coffee that Emma found herself on a chilly autumn morning, her laptop open but her thoughts adrift.',
+      'Across the room, amidst the hum of quiet conversations and the clinking of cups, was Liam. He was an unassuming figure, his attention buried in a worn-out book, yet there was a gentle ease about him that set him apart from the rest.',
+      'Their eyes met accidentally, a fleeting glance that should have passed like any other. But in that split second, something inexplicable happened. It was as if the world had subtly shifted, aligning their two souls in perfect harmony. Emma\'s heart fluttered, an unfamiliar yet exhilarating sensation, while Liam felt a warmth spread through him, a feeling he couldn\'t quite place.',
+      'In the days that followed, the coffee shop became their unspoken meeting place. They didn\'t know each other\'s names, yet every morning they shared silent, lingering glances that spoke volumes. The air around them was charged with a palpable connection, an invisible thread drawing them closer with each passing day.',
+      'One rainy morning, as Emma struggled with her broken umbrella, Liam approached her for the first time. With a shy smile, he offered to share his umbrella. As they walked together under the grey sky, their conversation flowed effortlessly. They talked about everything and nothing, from their favorite books to their dreams and fears.',
+      'Days turned into weeks, and the coffee shop saw their friendship blossom into something deeper. They discovered shared passions, laughed over small coincidences, and found solace in each other\'s company. The coffee shop became their sanctuary, a place where their hearts aligned in a beautiful symphony.',
+      'Finally, on a snowy winter\'s day, as they sat at their usual table by the window, Liam took Emma\'s hands into his. "I don\'t know what the future holds," he said, his voice soft yet certain, "but I do know that every moment with you feels like a piece of a dream I never want to wake up from."',
+      'Emma\'s eyes sparkled with unshed tears as she whispered, "In this crazy, unpredictable life, finding you has been the most unexpected and beautiful journey. Our hearts aligned not by chance, but by fate."',
+      'Outside, the world continued its hurried pace, but inside the little coffee shop, Emma and Liam sat, hand in hand, their hearts beating as one. They didn\'t know what tomorrow would bring, but they knew they had found something rare and true, a love that transcended the ordinary—a love that aligned their hearts in perfect harmony.'
+    ]
+
+  },
+
+  {
+    id: 'card4',
+    imageSrc: 'EchoesofAsummerlove.png',
+    altText: 'Romance',
+    title: '<b>Echoes of a Summer Love</b>',
+    subtitle: 'Romance',
+    paragraphs: [
+      'In the warm embrace of a summer in Brighton, Ellie found herself wandering along the sun-kissed beaches, her thoughts as restless as the waves. The town, known for its quaint charm and serene coastlines, seemed to hold a promise of something more, something she couldn\'t quite grasp. It was here, under the old wooden boardwalk, with the salty breeze playing with her hair, that Ellie\'s life took an unexpected turn.',
+      'She met Tom, a local artist with a smile as warm as the summer sun and eyes reflecting the depths of the sea. Their first conversation was a casual exchange of pleasantries, but Ellie felt a spark, a connection that resonated deep within her soul. Tom\'s gentle nature and passion for life captivated her, and soon, their simple hellos turned into long, heartfelt conversations that stretched into the starry nights.',
+      'Days turned into weeks, and their bond grew stronger with each tide. They shared stories, dreams, and laughter, their hearts beating in unison to the rhythm of the waves. Ellie, who had always been guarded, found herself opening up to Tom, baring her soul in a way she never thought possible.',
+      'Together, they explored the hidden gems of Brighton, from the vibrant lanes bursting with color to the tranquil sunsets that painted the sky in hues of orange and pink. They danced to the melodies of street performers, their feet sinking into the warm sand, and whispered secrets under the moonlit sky.',
+      'As the summer neared its end, Ellie realized that what she had with Tom was more than just a summer fling. It was a love that echoed through time, a love that felt as eternal as the tides themselves. But with the changing seasons, reality beckoned. Tom had to leave for an art exhibit abroad, and Ellie faced the prospect of returning to her life before Brighton.',
+      'On their last evening together, under the very boardwalk where they first met, they promised each other that no matter where life took them, the echoes of their summer love would always find a way back to their hearts. With a final kiss, they parted, carrying with them the memories of a love that changed them forever.',
+      'Years later, Ellie would often find herself back on those beaches, her eyes gazing at the horizon. And every time the waves whispered to the shore, she could hear the echoes of that summer love, a gentle reminder that some loves, like the tides, are meant to return.'
+    ]
+
+  },
+
+  {
+    id: 'card5',
+    imageSrc: 'Serenadeintherain.png',
+    altText: 'Romance',
+    title: '<b>Serenade in the Rain</b>',
+    subtitle: 'Romance',
+    paragraphs: [
+      'The rain in Portland often brought a sense of melancholy, but that evening, as Clara walked through the drizzle, something felt different. The city\'s usual cacophony was replaced by the sweet, haunting melody of a violin. Drawn by the music, Clara found herself outside a small café, where a street musician played under the shelter of a tattered awning.',
+      'The musician, Noah, played with a passion that made the rain seem like an integral part of his performance. Each note of his violin danced with the raindrops, creating a symphony that resonated with Clara’s heart. She stood there, mesmerized, as the world around her faded into the background, leaving only the music to envelop her.',
+      'When the piece ended, Clara applauded, her heart beating in tune with the lingering notes. Noah’s eyes met hers, and in that moment, a connection sparked between them. They talked over coffee, the rain tapping a rhythmic pattern on the windows, underscoring their conversation.',
+      'Noah shared his dreams of playing on grand stages, while Clara spoke of her love for the little moments that made life beautiful. They found comfort in each other\'s aspirations and fears, their conversation flowing as effortlessly as the melody that had first drawn Clara to him.',
+      'As the evening wore on, the rain eased, leaving a fresh, earthy scent in the air. Noah offered to walk Clara home, and together they strolled through the damp streets, their steps in sync. Under the glow of the streetlights, they shared stories, laughter, and eventually, a gentle, tentative kiss.',
+      'That night, the rain in Portland was not just a backdrop but a conductor, orchestrating a serenade that led two hearts to find each other. For Clara and Noah, the melody of the rain became their melody, a symbol of the beginning of a love story, unexpected but deeply felt, like the most beautiful of serenades.'
+    ]
+
+  },
+
+  {
+    id: 'card6',
+    imageSrc: 'Starlitsky.png',
+    altText: 'Romance',
+    title: '<b>Starlit Sky</b>',
+    subtitle: 'Romance',
+    paragraphs: [
+      'Alex, a seasoned astronomer, had always been fascinated by the mysteries of the cosmos. He spent countless nights at his desert observatory, eyes glued to the telescope, exploring the celestial wonders. The night sky was his solace, a place where he felt connected to the universe\'s infinite possibilities.',
+      'Jordan, a travel photographer with a penchant for capturing nature\'s beauty, found herself in the Arizona desert, drawn by the allure of its famous starlit skies. With her camera in hand, she was determined to capture the majesty of the Milky Way.',
+      'Their paths crossed one fateful night when Jordan stumbled upon Alex\'s observatory while searching for the perfect spot to set up her tripod. Intrigued by the array of telescopes and gadgets, she struck up a conversation with Alex. He was more than happy to share his knowledge, and they quickly bonded over their shared awe for the night sky.',
+      'As the night deepened, they explored the stars together, with Alex pointing out constellations and distant galaxies, while Jordan captured them through her lens. They talked about everything from the birth of stars to the poetry of the universe, finding in each other a shared passion that was as rare as a shooting star.',
+      'Under the vast, starlit sky, something beautiful and profound blossomed between them. They realized that just like the stars that brought them together, their connection was a rare alignment. The desert night was filled with laughter and stories, and in the silence between them, a mutual understanding that they had found something special.',
+      'The night culminated in a moment where they simply sat together, watching the sky. No words were needed; the stars above spoke volumes. In that serene desert, under the watchful eyes of the universe, Alex and Jordan found not just love, but a shared destiny written in the stars.',
+      'As dawn approached, with the first light of the sun casting its glow on the horizon, they knew that their journey together was just beginning, a journey that promised to be as endless and beautiful as the starlit sky under which they had met.'
+    ]
+
+  }
+  // Add more cards in the same format
+];
+
+function displayCard(cardId) {
+  var selectedCard = cardData.find(function(card) {
+    return card.id === cardId;
+  });
+
+  if (selectedCard) {
+    updateContent(
+      selectedCard.imageSrc,
+      selectedCard.altText,
+      selectedCard.title,
+      selectedCard.subtitle,
+      selectedCard.paragraphs
+    );
+  }
+}
+
+function updateContent(imageSrc, altText, title, subtitle, paragraphs) {
+    document.getElementById('dynamicImage').src = imageSrc;
+    document.getElementById('dynamicImage').alt = altText;
+    document.getElementById('dynamicTitle').innerHTML = title;
+    document.getElementById('dynamicSubtitle').innerHTML = subtitle;
+
+    var paragraphsContainer = document.getElementById('dynamicParagraphs');
+    paragraphsContainer.innerHTML = ''; // Clear existing paragraphs
+
+    paragraphs.forEach(function(paragraph) {
+        var p = document.createElement('p');
+        p.innerHTML = paragraph;
+        paragraphsContainer.appendChild(p);
+    });
+}
+
+updateContent(
+    'Moonlitwhispers.png', 
+    'Romance', 
+    '<b>Moonlit Whispers</b>', 
+    'Romance',  
+    [
+      'In the quaint town of Willow Creek, where the moon shone brighter than anywhere else, lived Elara, a young woman whose heart held secrets as deep as the night sky. Each night, beneath the silvery glow of the moon, she\'d walk to the old bridge spanning the gentle Willow River, a place where her thoughts felt as free as the whispering winds.',
+      'One moonlit night, as Elara leaned against the cool railing, lost in her reverie, she heard a soft, melodic voice. Turning, she saw a young man, his eyes reflecting the starry night, standing a few steps away. He introduced himself as Orion, a painter who found his muse in the night\'s beauty.',
+      'Night after night, they met under the same moon, their conversations flowing like the river below. Orion shared his dreams of capturing the moon\'s essence on his canvas, while Elara spoke of her longing for a life beyond the sleepy town. Their words, soft and cautious, began to weave a tapestry of shared dreams and quiet yearnings.',
+      'One evening, Orion revealed a canvas to Elara. It was a painting of the bridge, bathed in moonlight, with two figures standing close, almost touching. The image was so vivid, so real, that Elara felt tears prick her eyes. "It\'s us," she whispered.',
+      'Orion\'s voice was hesitant yet hopeful as he spoke, "Elara, in you, I\'ve found my moonlit muse. In these whispers, I\'ve found a love that speaks louder than any words."',
+      'Under the glow of the full moon, their lips met for the first time, sealing a promise made in the quiet of moonlit whispers. Their love, much like the moon above, became a beacon in the night, guiding them into a future where dreams and reality merged, as beautiful and endless as the starry sky.'
+    ] 
+);
+
+</script>
+
+</body>
+</html>
